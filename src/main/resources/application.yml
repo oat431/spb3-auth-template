@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: auth-service
+  devtools:
+    livereload:
+      enabled: true
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/DB_QA_AUTH_V2
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq3t6w9z$C&F)J@McQfTjWnZr4u7x!A
